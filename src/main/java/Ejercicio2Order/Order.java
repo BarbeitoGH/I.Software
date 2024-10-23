@@ -34,16 +34,26 @@ public class Order {
      * Luego te saca por consola los valores del order como si fuese una lista.
      */
 
-    public void printOrderDetails() {
+    public String printOrderDetails() {
+    	String pedido = "";
         double finalAmount = this.totalAmount - this.discount + this.tax;
         System.out.println("Customer: " + this.customerName);
+        pedido=pedido+this.customerName;
         System.out.println("Customer Type: " + this.customerType);
+        pedido=pedido+this.customerType;
         System.out.println("Items: " + String.join(", ", this.items));
+        pedido=pedido+this.items;
         System.out.println("Total Amount: " + this.totalAmount);
+        pedido=pedido+this.totalAmount;
         System.out.println("Discount: " + this.discount);
+        pedido=pedido+this.discount;
         System.out.println("Tax: " + this.tax);
+        pedido=pedido+this.tax;
         System.out.println("Final Amount: " + finalAmount);
         this.totalAmount=finalAmount;
+        pedido=pedido+this.totalAmount;
+        return pedido;
+        
     }
 
 }
