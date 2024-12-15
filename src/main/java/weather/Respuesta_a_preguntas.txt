@@ -1,0 +1,7 @@
+¿Es necesario añadir la librería HttpClient al proyecto?
+
+	Para HttpClient no necesitas añadir nada externo, ya que viene incluido en el JDK desde Java 11.
+	
+¿Es necesario añadir la librería Gson al proyecto?
+
+	Si, es necesario introducir la version de JSON en el pom.xml
